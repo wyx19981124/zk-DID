@@ -176,3 +176,6 @@ python zk-DID_implementation/subject/retrieval.py
 
 -   Follow the order: circuit → input → benchmark
 -   Results may vary depending on hardware
+-   You need to generate a new "powers of tau" ceremony using `snarkjs`. Place the generated `pot12_final.ptau` file into the `experiment/` directory before running the experiments. (The process can be referenced from: https://docs.circom.io/getting-started/proving-circuits/)
+
+
