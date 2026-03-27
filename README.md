@@ -137,9 +137,38 @@ python experiment/time_tester.py
 
 ### 4. Run zk-DID Implementation
 
--   Owner side → `zk-DID_implementation/owner/`
--   User side → `zk-DID_implementation/subject/`
--   Circuits → `zk-DID_implementation/circuit/`
+The zk-DID workflow involves interactions between the resource owner and
+the user (subject). Follow the steps below:
+
+(1)  **Deploy Smart Contract (Owner side)**
+
+``` bash
+python zk-DID_implementation/owner/contract_deploy.py
+```
+
+(2)  **Generate Name List (User side)**
+
+``` bash
+python zk-DID_implementation/subject/creater.py
+```
+
+(3)  **Generate Token (User side)**
+
+``` bash
+python zk-DID_implementation/subject/prover.py
+```
+
+(4)  **Token Verification / Operation (Owner side)**
+
+``` bash
+python zk-DID_implementation/owner/token_operation.py
+```
+
+(5)  **Claim Record Entries (User side)**
+
+``` bash
+python zk-DID_implementation/subject/retrieval.py
+```
 
 ------------------------------------------------------------------------
 
