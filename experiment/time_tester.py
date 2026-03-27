@@ -24,13 +24,10 @@ BUILD_DIR.mkdir(parents=True, exist_ok=True)
 # ------------------------------------------------------------------
 # Benchmark Scope Configuration
 # ------------------------------------------------------------------
-# Full benchmark example:
-# METHODS = ["plain", "mimc", "poseidon"]
-# LEVELS = list(range(1, 21))
+# Full benchmark:
+METHODS = ["plain", "mimc", "poseidon"]
+LEVELS = list(range(1, 21))
 
-# Current benchmark target configuration.
-METHODS = ["poseidon"]
-LEVELS = [6]
 
 # Powers of Tau file required by Groth16 setup.
 PTAU = ROOT / "pot12_final.ptau"
